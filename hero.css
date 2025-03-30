@@ -1,0 +1,74 @@
+.hero_sec {
+    background-image: url("assets/hero-bg.png");
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: grid;
+    grid-template-rows: 0.27fr 1fr 0.27fr;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Roboto", sans-serif;
+    padding-top: 85px;
+}
+
+.content1 {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 0.15fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_pic_holder {
+    align-items: end;
+    text-align: right;
+    margin-right: 4%
+}
+
+.hero_pic_holder img {
+    height: 30cqw;
+}
+
+.hero_text_holder h1 {
+    color: #CAF0F8;
+    font-size: 4.5vw;
+    font-weight: 1000;
+}
+
+.hero_text_holder h2 {
+    color: #03055F;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.hero_text_holder h3 {
+    color: #03055F;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+@media (max-width: 750px) {
+    .hero_sec {
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        padding-top: 90px;
+    }
+
+    .hero_pic_holder img {
+        height: 45cqw;
+    }
+
+    .hero_text_holder h1 {
+        font-size: 5.5vw;
+    }
+
+    .hero_text_holder h2 {
+        font-size: 3vw;
+    }   
+    
+    .hero_text_holder h3 {
+        font-size: 2.4vw;
+    } 
+
+}

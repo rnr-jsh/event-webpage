@@ -1,0 +1,138 @@
+body {
+    background: linear-gradient(to bottom, #00B4D8, #03045E);
+    min-height: 100vh;
+    margin: -0.01%;
+}
+
+header{
+    background-color: #00B4D8;
+    color: #03055F;
+
+    font-family: "Jura", sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+.navlogo {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navlogo h1{
+    font-size: 3vw;
+    margin-left: 2%;
+}
+
+.logo {
+    height: 80%;
+    width: 80%;
+    min-width: 50px;
+}
+
+nav {
+    margin-right: 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+.burger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    color: #CAF0F8;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.5vw;
+    column-gap: 0px;
+    padding: 0px;
+}
+
+.navlist li {
+    margin: 0 36px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: #03055F;
+}
+
+.navbutton {
+    color: #00B4D8;
+    background-color: #03055F;
+    border-radius: 12px;
+    border-width: 0px;;
+    padding: 6px 10px;
+    font-size: 18pt;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .burger {
+        display: block; /* Show burger icon */
+    }
+
+    .navlist {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: -112px;
+        width: 200%;
+        background-color: #CAF0F8;
+        text-align: center; /* Center text */
+        align-items: center; /* Center items */
+        padding: 10px 0;
+        border-radius: 10px;
+        font-size: 2.7vw;
+    }
+
+    .navlogo h1{
+        font-size: 30px;
+        margin-left: 2%;
+    }
+
+    .logo {
+        min-width: 50px;
+    }
+
+    .navbutton {
+        color: #00B4D8;
+        background-color: #03055F;
+        border-radius: 8px;
+        border-width: 0px;;
+        padding: 1px 12px;
+        font-size: 3vw;
+    }
+
+    /* When checkbox is checked, show menu */
+    .menu-checkbox:checked + .burger + .navlist{
+        display: flex;
+        row-gap: 12px;
+    }
+}

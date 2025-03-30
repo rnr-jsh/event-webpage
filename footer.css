@@ -1,0 +1,141 @@
+.footer_sec {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.reg_button {
+    display: block;
+    margin: 2%;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.reg_button button {
+    background-color: #CAF0F8;
+    color: #03045E;
+    border-radius: 100px;
+    border: 0;
+    cursor: pointer;
+
+    font-weight: 1000;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5vw;
+
+    padding: 1.5% 5%;
+}
+
+.divider {
+    width: 100%;
+    background-color: #00B4D8;
+    height: 15vh;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Jura", sans-serif;
+    color: #017BB0;
+
+    padding-bottom: 1%;
+}
+
+.footer1 {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    align-items: top;
+    justify-content: center;
+    color: #017BB0;
+    padding: 2%;
+}
+
+.logo_hold {
+    text-align: center;
+}
+
+.logo_hold img{
+    width: 100%;
+}
+
+.copyright_holder h4 {
+    color: #CAF0F8;
+    font-size: 2.2vw;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.footer2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: top;
+    justify-content: center;
+    padding: 2%;
+}
+
+.contacts h5 {
+    color: #CAF0F8;
+    margin-bottom: 0;
+}
+
+.contacts {
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+.soc_med {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.soc_med img, .soc_med a {
+    margin: 3%;
+    width: 100%;
+}
+
+@media (max-width: 750px) {
+    .reg_button button {
+        font-size: 7vw;
+    }
+    
+    footer {
+        grid-template-columns: 1fr;
+        font-family: "Jura", sans-serif;
+        padding-bottom: 1%;
+        margin: 5%;
+    }
+    
+    .footer1 {
+        grid-template-columns: 0.2fr 1fr;
+    }
+    
+    .logo_hold {
+        text-align: center;
+    }
+    
+    .copyright_holder h4 {
+        font-size: 5vw;
+    }
+    
+    .footer2 {
+        grid-template-columns: 1fr;
+        margin-top: 4%;
+    }
+    
+    .contacts {
+        font-size: 4vw;
+    }
+
+    .soc_med img, .soc_med a {
+        width: 40%;
+        margin: 1%;
+        margin-top: 3%;
+    }
+}
+

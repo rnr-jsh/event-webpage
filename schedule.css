@@ -1,0 +1,101 @@
+.schedule_sec {
+    display: grid;
+    grid-template-rows: 0.2fr 1fr;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Roboto", sans-serif;
+
+    background-image: url("assets/sched_bg.png");
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content5 {
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.sched_title h1{
+    color: #caf0f8;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.sched {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: top;
+    justify-content: center;
+    margin: 1.5%;
+    column-gap: 2%;
+
+    color: #F0F0F0;
+}
+
+.sched h3 {
+    margin: 1%;
+    font-size: 1.2vw
+}
+
+.sched h4, .sched ul {
+    font-size: 1.1vw;
+}
+
+.sched h5 {
+    font-size: 0.9vw;
+}
+
+.sched h4, .sched h5, .sched ul {
+    margin: 0;
+    margin-left: 5%;
+    font-weight: 500;
+}
+
+.sched h5 {
+    font-weight: 400;
+}
+
+
+@media (max-width: 750px) {
+    .schedule_sec {
+        grid-template-rows: 0.1fr 1fr;
+    }
+    
+    .content5 {
+        grid-template-rows: 0.1fr 1fr;
+    }
+    
+    .sched_title h1{
+        font-size: 4.5vw;
+    }
+    
+    .sched {
+        grid-template-columns: 1fr;
+        margin: 5%;
+    }
+    
+    .sched h3 {
+        margin: 1%;
+        font-size: 4vw;
+        margin-bottom: 3%
+    }
+    
+    .sched h4, .sched ul {
+        font-size: 3.2vw;
+    }
+
+    .sched h5 {
+        font-size: 3vw;
+    }
+
+    .sched h4, .sched h5, .sched ul {
+        margin: 0;
+        margin-left: 5%;
+        font-weight: 500;
+    }
+}

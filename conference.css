@@ -1,0 +1,86 @@
+.conference_sec {
+    display: grid;
+    grid-template-rows: 0.4fr 1fr;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Roboto", sans-serif;
+}
+
+.content2 {
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.confe_title h1{
+    color: #caf0f8;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.confe_contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    column-gap: 2%;
+}
+
+.confe {
+    background-color: #caf0f8;
+    background-size: cover;
+    border-radius: 40px;
+    padding: 7%
+}
+
+.confe h3 {
+    font-size: 2vw;
+    margin: 0;
+    color: #03045E;
+    text-align: center;
+    font-weight: 1000;
+}
+
+.confe p {
+    color: #0187B9;
+    font-size: 1.1vw;
+    text-align: center;
+}
+
+@media (max-width: 750px) {
+    .confe_contents {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 15%;
+        margin-top: 1%;
+        row-gap: 5%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .confe h3 {
+        font-size: 3vw;
+    }
+    
+    .confe p {
+        font-size: 3vw;
+    }
+
+    .confe_title h1{
+        font-size: 4.5vw;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+
+    .conference_sec {
+        display: flex;
+    }
+
+    .content2 {
+        grid-template-rows: 0.2fr 1fr;
+    }
+}
